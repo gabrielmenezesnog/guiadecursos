@@ -1,0 +1,37 @@
+:root {
+  --cor-amarelo: #ffbb00;
+  --cor-amarelo-escuro: #332200;
+  --cor-cinza-b2: #b2b2b2;
+  --cor-branco: #fff;
+  --color-match: #111;
+  --cor-azul-link: #2e9bff;
+}
+
+.cor-amarelo {
+  color: var(--cor-amarelo);
+}
+.cor-amarelo-escuro {
+  color: var(--cor-amarelo-escuro);
+}
+
+.cor-cinza-b2 {
+  color: var(--cor-cinza-b2);
+}
+
+.cor-branco {
+  color: var(--cor-branco);
+}
+
+.cor-azul-link {
+  color: var(--cor-azul-link);
+}
+
+.color-match {
+  color: var(--color-match);
+}
+
+@media (max-width: 600px) {
+  :root {
+    --color-match: #fff;
+  }
+}
