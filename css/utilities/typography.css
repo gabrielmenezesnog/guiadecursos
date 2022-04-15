@@ -18,6 +18,16 @@
   font: 500 1.5rem/2 "Roboto", sans-serif;
 }
 
+
+.font-titulo {
+  font: 500 2rem/1.25 "Poppins", sans-serif;
+}
+
+.font-subtitulo {
+  font: 500 1.5rem/1.25 "Poppins", sans-serif;
+}
+
+
 @media (max-width: 600px) {
   .font-nav-header {
     font: 500 1rem/1.25 "Poppins", sans-serif;
@@ -25,7 +35,7 @@
 
   .font-titulo-home {
     font: 600 2rem/1.25 "Poppins", sans-serif;
-    width: 20ch !important;
+    width: 20ch;
   }
 
   .font-button {
@@ -34,11 +44,19 @@
   
   .font-texto-padrao {
     font: 500 1rem/1.5 "Roboto", sans-serif;
-    width: 35ch;
+    max-width: 32ch;
   }
 
   .font-h3{
     font: 500 1rem/2 "Roboto", sans-serif;
+  }
+
+  .font-titulo {
+    font: 500 1.5rem/1.25 "Poppins", sans-serif;
+  }
+  
+  .font-subtitulo {
+    font: 500 1.5rem/1.25 "Poppins", sans-serif;
   }
 }
 
@@ -49,7 +67,7 @@
 
   .font-titulo-home {
     font: 600 2rem/1.25 "Poppins", sans-serif;
-    width: 13ch !important;
+    width: 13ch;
   }
 
   .font-button {
@@ -57,7 +75,14 @@
   }
   
   .font-texto-padrao {
+    font: 500 1.2rem/1.5 "Roboto", sans-serif;
+    max-width: 30ch;
+  }
+}
+
+@media (max-width: 400px) {
+  .font-texto-padrao {
     font: 500 1rem/1.5 "Roboto", sans-serif;
-    width: 30ch;
+    max-width: 30ch;
   }
 }

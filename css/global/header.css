@@ -45,7 +45,6 @@
   .header {
     gap: 20px;
     background: #111;
-    margin-bottom: 100px;
   }
 
   .header-menu {
@@ -137,6 +136,5 @@
   .header {
     gap: 20px;
     padding: 20px 40px;
-    margin-bottom: 100px;
   }
 }
