@@ -41,7 +41,7 @@
   position: absolute;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   .header {
     gap: 20px;
     background: #111;

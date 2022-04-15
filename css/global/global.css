@@ -61,7 +61,7 @@ button {
   border-radius: 50px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   ::root {
     --width: 300;
     --height: 19;
