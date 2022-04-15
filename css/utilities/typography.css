@@ -85,17 +85,12 @@
 
   .font-texto-home {
     font: 500 1.2rem/1.5 "Roboto", sans-serif;
-    max-width: 27ch;
+    max-width: 26ch;
   }
 
   .font-texto-padrao {
     font: 500 1rem/1.5 "Roboto", sans-serif;
     max-width: 36ch;
-  }
-
-  .font-texto-home {
-    font: 500 1.2rem/1.5 "Roboto", sans-serif;
-    max-width: 38ch;
   }
 }
 
