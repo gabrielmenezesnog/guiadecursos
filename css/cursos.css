@@ -1,0 +1,151 @@
+.curso-list-populares {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.cursos h2:first-child {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.cursos h2::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 3px;
+  border-radius: 4px;
+  background: var(--cor-amarelo);
+  position: absolute;
+  top: 48px;
+}
+
+.cursos h2:nth-child(3),
+.cursos h2:nth-child(5) {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.cursos h2:nth-child(3)::after,
+.cursos h2:nth-child(5)::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 3px;
+  border-radius: 4px;
+  background: var(--cor-amarelo);
+  position: absolute;
+  top: 38px;
+}
+
+.cursos p {
+  width: 62ch;
+  margin-bottom: 60px;
+}
+
+.cursos p:last-child {
+  width: 62ch;
+  margin-bottom: 120px;
+}
+
+#searchWrapper {
+  margin-bottom: 60px;
+}
+
+#searchWrapper label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+#search {
+  background: var(--cor-cinza-ed);
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  width: 35%;
+}
+
+.hide {
+  display: none;
+}
+
+.curso-list h3 {
+  font-size: 1.25rem;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.curso-list h3::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--cor-amarelo);
+}
+
+.curso picture img {
+  max-width: 200px;
+  height: auto;
+}
+
+.curso {
+  max-width: min-content;
+}
+
+.curso h4 {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.curso h4::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background: var(--cor-amarelo);
+}
+
+.curso a:hover h4::before {
+  width: 16px;
+  transition: all 0.3s;
+}
+
+@media (max-width: 600px) {
+  .cursos h2::after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 3px;
+    border-radius: 4px;
+    background: var(--cor-amarelo);
+    position: absolute;
+    top: 36px;
+  }
+
+  .cursos h2:nth-child(3)::after,
+  .cursos h2:nth-child(5)::after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 3px;
+    border-radius: 4px;
+    background: var(--cor-amarelo);
+    position: absolute;
+    top: 36px;
+  }
+
+  #searchWrapper label {
+    margin-top: 40px;
+    margin-bottom: 8px;
+  }
+
+  #search {
+    width: 99.5%;
+  }
+}

@@ -2,6 +2,7 @@
   --cor-amarelo: #ffbb00;
   --cor-amarelo-escuro: #332200;
   --cor-cinza-b2: #b2b2b2;
+  --cor-cinza-ed: #ededed;
   --cor-branco: #fff;
   --color-match: #111;
   --cor-azul-link: #2e9bff;
@@ -16,6 +17,10 @@
 
 .cor-cinza-b2 {
   color: var(--cor-cinza-b2);
+}
+
+.cor-cinza-ed {
+  color: var(--cor-cinza-ed);
 }
 
 .cor-branco {

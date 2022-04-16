@@ -6,6 +6,7 @@
 body {
   margin: 0px;
   background: #fff;
+  color: #111;
 }
 
 ul {
@@ -35,7 +36,8 @@ img {
   height: auto;
 }
 
-img[src$=".jpg"] {
+img[src$=".jpg"],
+img[src$=".png"] {
   border-radius: 4px;
 }
 
