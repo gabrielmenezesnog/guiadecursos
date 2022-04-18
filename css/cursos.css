@@ -1,7 +1,9 @@
-.curso-list-populares {
+#cursosList {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
+  margin-bottom: 120px;
 }
 
 .cursos h2:first-child {
@@ -21,32 +23,46 @@
   top: 48px;
 }
 
-.cursos h2:nth-child(3),
-.cursos h2:nth-child(5) {
-  position: relative;
-  margin-bottom: 20px;
+.curso {
+  max-width: min-content;
+  grid-template-areas: "image name";
+  text-align: left;
 }
 
-.cursos h2:nth-child(3)::after,
-.cursos h2:nth-child(5)::after {
+.curso a {
+  text-decoration: none;
+  color: #111;
+}
+
+.curso h4 {
+  grid-area: name;
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+}
+
+.curso h4 {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.curso h4::before {
   content: "";
   display: block;
-  width: 72px;
-  height: 3px;
-  border-radius: 4px;
-  background: var(--cor-amarelo);
-  position: absolute;
-  top: 38px;
+  width: 7px;
+  height: 12px;
+  background: #ffbb22;
 }
 
-.cursos p {
-  width: 62ch;
-  margin-bottom: 60px;
+.curso a:hover h4::before {
+  width: 12px;
+  transition: all 0.3s;
 }
 
-.cursos p:last-child {
-  width: 62ch;
-  margin-bottom: 120px;
+.curso img {
+  max-width: 200px;
+  grid-area: image;
 }
 
 #searchWrapper {
@@ -58,16 +74,12 @@
   margin-bottom: 4px;
 }
 
-#search {
+#searchBar {
   background: var(--cor-cinza-ed);
   border: none;
   border-radius: 4px;
   padding: 12px 24px;
-  width: 35%;
-}
-
-.hide {
-  display: none;
+  width: 450px;
 }
 
 .curso-list h3 {
@@ -85,11 +97,6 @@
   height: 8px;
   border-radius: 50%;
   background: var(--cor-amarelo);
-}
-
-.curso picture img {
-  max-width: 200px;
-  height: auto;
 }
 
 .curso {
@@ -116,36 +123,51 @@
   transition: all 0.3s;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
+  #cursosList {
+    gap: 20px;
+  }
+
   .cursos h2::after {
-    content: "";
-    display: block;
-    width: 72px;
-    height: 3px;
-    border-radius: 4px;
-    background: var(--cor-amarelo);
-    position: absolute;
     top: 36px;
   }
 
-  .cursos h2:nth-child(3)::after,
-  .cursos h2:nth-child(5)::after {
-    content: "";
-    display: block;
-    width: 72px;
-    height: 3px;
-    border-radius: 4px;
-    background: var(--cor-amarelo);
-    position: absolute;
-    top: 36px;
+  #searchWrapper {
+    margin-bottom: 60px;
+    margin-top: 28px;
   }
 
-  #searchWrapper label {
-    margin-top: 40px;
-    margin-bottom: 8px;
+  #searchBar {
+    width: 100%;
+  }
+  .curso h4 {
+    place-items: center;
+    grid-area: name;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+  .curso img {
+    max-width: 160px;
+    grid-area: image;
+  }
+}
+
+@media (max-width: 380px) {
+  .curso h4 {
+    place-items: start;
+    font-size: 0.6rem;
+    line-height: 0.8rem;
   }
 
-  #search {
-    width: 99.5%;
+  .curso img {
+    max-width: 130px;
+    grid-area: image;
+  }
+}
+
+@media (max-width: 330px) {
+  .curso img {
+    max-width: 110px;
+    grid-area: image;
   }
 }
