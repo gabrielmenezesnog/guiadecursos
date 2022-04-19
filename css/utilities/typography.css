@@ -16,6 +16,10 @@
   max-width: 60ch;
 }
 
+.font-curso-info{
+  font: 400 1.25rem/1.5 "Roboto", sans-serif;
+}
+
 .font-h3 {
   font: 500 1.5rem/2 "Roboto", sans-serif;
 }

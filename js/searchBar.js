@@ -27,11 +27,11 @@ const displayCursos = (cursosGuia) => {
   const htmlString = cursosGuia
     .map((curso) => {
       return `
-            <li class="curso">
-                    <a href="${curso.link}">
-                            <img src="${curso.image}"></img>
-                            <h4>${curso.name}</h4>
-                    </a>
+            <li class="curso" id=""nav>
+              <button id="button-curso">
+                <img src="${curso.image}"></img>
+                  <h4>${curso.name}</h4>
+              </button>
             </li>
         `;
     })

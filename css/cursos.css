@@ -1,8 +1,7 @@
 #cursosList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
+  gap: 24px;
   margin-bottom: 120px;
 }
 
@@ -29,13 +28,8 @@
   text-align: left;
 }
 
-.curso a {
-  text-decoration: none;
-  color: #111;
-}
-
 .curso img {
-  max-width: 200px;
+  max-width: 250px;
   grid-area: image;
 }
 
@@ -81,7 +75,7 @@
   display: flex;
   gap: 8px;
   margin-top: 8px;
-  font: 600 0.75rem/1.25 "Poppins", sans-serif;
+  font: 600 1rem/1.25 "Poppins", sans-serif;
 }
 
 .curso h4::before {
@@ -93,7 +87,7 @@
   place-self: center;
 }
 
-.curso a:hover h4::before {
+.curso button:hover h4::before {
   width: 16px;
   transition: all 0.3s;
 }
@@ -101,6 +95,7 @@
 @media (max-width: 480px) {
   #cursosList {
     gap: 20px;
+    place-content: center;
   }
 
   .cursos h2::after {
@@ -127,34 +122,50 @@
     height: 5px;
   }
 
-  .curso a:hover h4::before {
+  .curso button:hover h4::before {
     width: 16px;
     transition: all 0.3s;
   }
   .curso img {
-    max-width: 160px;
+    max-width: 140px;
     grid-area: image;
   }
 }
 
 @media (max-width: 380px) {
+  #cursosList {
+    gap: 10px;
+  }
+
   .curso h4 {
-    place-items: start;
+    align-items: center;
     font-size: 0.55rem;
     line-height: 0.8rem;
   }
 
   .curso img {
-    max-width: 130px;
+    max-width: 120px;
     grid-area: image;
   }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 340px) {
   .curso h4 {
-    place-items: start;
+    align-items: center;
+    justify-items: left;
     font-size: 0.5rem;
     line-height: 0.8rem;
+  }
+
+  .curso h4::before {
+    width: 2px;
+    height: 12px;
+    top: 0px;
+  }
+
+  .curso button:hover h4::before {
+    width: 4px;
+    transition: all 0.3s;
   }
 
   .curso img {
