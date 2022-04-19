@@ -1,9 +1,11 @@
 .introducao {
   display: grid;
+  position: relative;
+  top: 8vh;
   grid-template-columns: 1fr 1fr;
   gap: 0px 40px;
   align-items: center;
-  margin-bottom: 120px;
+  margin-bottom: 240px;
 }
 
 .introducao-titulo {
@@ -28,6 +30,7 @@
   .introducao {
     grid-template-columns: 1fr;
     padding-top: 20px;
+    position: unset;
     gap: 20px;
     margin-bottom: 0px;
   }
@@ -82,6 +85,7 @@
 
   .introducao-titulo {
     padding-bottom: 8px;
+    max-width: 13ch;
   }
 
   .introducao-conteudo p {
@@ -98,6 +102,11 @@
 @media (max-width: 360px) {
   .introducao-conteudo h1 {
     font: 600 1.5rem/2.25rem "Poppins", sans-serif;
+  }
+
+  .introducao-titulo {
+    padding-bottom: 8px;
+    max-width: unset;
   }
 
   .introducao-conteudo a {
