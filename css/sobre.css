@@ -12,7 +12,7 @@
   border-radius: 4px;
   background: var(--cor-amarelo);
   position: absolute;
-  top: 48px;
+  top: 36px;
 }
 
 .sobre h2:nth-child(3),
@@ -26,44 +26,31 @@
   content: "";
   display: block;
   width: 72px;
-  height: 3px;
+  height: 4px;
   border-radius: 4px;
   background: var(--cor-amarelo);
   position: absolute;
-  top: 38px;
+  top: 36px;
 }
 
 .sobre p {
-  width: 62ch;
   margin-bottom: 60px;
+  max-width: 60ch;
 }
 
 .sobre p:last-child {
-  width: 62ch;
   margin-bottom: 120px;
 }
 
-@media (max-width: 620px) {
-  .sobre h2::after {
-    content: "";
-    display: block;
-    width: 72px;
-    height: 3px;
-    border-radius: 4px;
-    background: var(--cor-amarelo);
-    position: absolute;
-    top: 36px;
+@media (max-width: 420px) {
+  .sobre p {
+    font: 400 1rem/1.5 "Roboto", sans-serif;
+    margin-bottom: 40px;
   }
+}
 
-  .sobre h2:nth-child(3)::after,
-  .sobre h2:nth-child(5)::after {
-    content: "";
-    display: block;
-    width: 72px;
-    height: 3px;
-    border-radius: 4px;
-    background: var(--cor-amarelo);
-    position: absolute;
-    top: 36px;
+@media (max-width: 320px) {
+  .sobre h2:first-child {
+    font: 500 1.25rem/1.875rem "Poppins", sans-serif;
   }
 }

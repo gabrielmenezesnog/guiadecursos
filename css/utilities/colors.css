@@ -1,19 +1,19 @@
 :root {
-  --cor-amarelo: #ffbb00;
-  --cor-amarelo-escuro: #332200;
+  --cor-cinza-9c: #9c9c9c;
   --cor-cinza-b2: #b2b2b2;
   --cor-cinza-ed: #ededed;
   --cor-cinza-71: #717171;
+  --cor-cinza-40: #404040;
   --cor-branco: #fff;
+  --cor-preto: #111;
   --color-match: #111;
+  --cor-amarelo: #ffbb00;
+  --cor-amarelo-escuro: #332200;
   --cor-azul-link: #2e9bff;
 }
 
-.cor-amarelo {
-  color: var(--cor-amarelo);
-}
-.cor-amarelo-escuro {
-  color: var(--cor-amarelo-escuro);
+.cor-cinza-9c {
+  color: var(--cor-cinza-9c);
 }
 
 .cor-cinza-b2 {
@@ -28,12 +28,24 @@
   color: var(--cor-cinza-71);
 }
 
+.cor-cinza-40 {
+  color: var(--cor-cinza-40);
+}
+
 .cor-branco {
   color: var(--cor-branco);
 }
 
 .cor-preto {
-  color: #111;
+  color: var(--cor-preto);
+}
+
+.cor-amarelo {
+  color: var(--cor-amarelo);
+}
+
+.cor-amarelo-escuro {
+  color: var(--cor-amarelo-escuro);
 }
 
 .cor-azul-link {

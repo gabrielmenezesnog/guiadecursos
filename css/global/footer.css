@@ -19,9 +19,16 @@
   color: #fff;
 }
 
+.footer li {
+  margin-bottom: 8px;
+}
+
 .footer p {
   grid-column: 1/-1;
+}
 
+.footer a > img {
+  padding: 5px;
 }
 
 @media (max-width: 600px) {
@@ -34,10 +41,10 @@
   }
 
   .footer h3 {
-    margin-bottom: 0px;
+    margin-bottom: 12px;
   }
 
   .footer li {
-    padding: 8px 0px;
+    margin-bottom: 8px;
   }
 }

@@ -1,13 +1,10 @@
-#cursosList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+.cursos {
   margin-bottom: 120px;
 }
 
 .cursos h2:first-child {
   margin-top: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   position: relative;
 }
 
@@ -19,17 +16,20 @@
   border-radius: 4px;
   background: var(--cor-amarelo);
   position: absolute;
-  top: 48px;
+  top: 36px;
 }
 
 .curso {
   max-width: min-content;
   grid-template-areas: "image name";
-  text-align: left;
+}
+
+.curso:hover {
+  filter: drop-shadow(0px 0px 2px var(--cor-amarelo));
 }
 
 .curso img {
-  max-width: 250px;
+  max-width: 260px;
   grid-area: image;
 }
 
@@ -47,11 +47,16 @@
   border: none;
   border-radius: 4px;
   padding: 12px 24px;
-  width: 450px;
+  width: 50%;
+}
+
+#cursosList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 40px;
 }
 
 .curso-list h3 {
-  font-size: 1.25rem;
   display: flex;
   gap: 8px;
   align-items: center;
@@ -67,109 +72,82 @@
   background: var(--cor-amarelo);
 }
 
-.curso {
-  max-width: min-content;
+#cursosList a {
+  font: 600 0.8rem/1.25 "Poppins", sans-serif;
 }
 
-.curso h4 {
-  display: flex;
-  gap: 8px;
-  margin-top: 8px;
-  font: 600 1rem/1.25 "Poppins", sans-serif;
-}
-
-.curso h4::before {
-  content: "";
-  display: block;
-  width: 12px;
-  height: 8px;
-  background: var(--cor-amarelo);
-  place-self: center;
-}
-
-.curso button:hover h4::before {
-  width: 16px;
+#cursosList a h4 {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+  background: var(--cor-cinza-ed);
+  width: 100%;
+  border-radius: 0px 0px 4px 4px;
   transition: all 0.3s;
 }
 
-@media (max-width: 480px) {
-  #cursosList {
-    gap: 20px;
-    place-content: center;
-  }
+#cursosList a:hover h4 {
+  background: var(--cor-amarelo);
+}
 
-  .cursos h2::after {
-    top: 36px;
-  }
-
-  #searchWrapper {
-    margin-bottom: 60px;
-    margin-top: 28px;
+@media (max-width: 800px) {
+  .curso img {
+    max-width: 260px;
+    grid-area: image;
   }
 
   #searchBar {
     width: 100%;
   }
+}
+
+@media (max-width: 620px) {
+  #cursosList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+
+  .curso img {
+    max-width: 200px;
+    grid-area: image;
+  }
 
   .curso h4 {
-    grid-area: name;
-    gap: 5px;
-    font-size: 0.6rem;
+    font: 500 0.75rem/1.125rem "Poppins", sans-serif;;
+  }
+}
+
+@media (max-width: 470px) {
+  #cursosList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 45%));
+    grid-gap: 20px;
   }
 
-  .curso h4::before {
-    width: 8px;
-    height: 5px;
-  }
-
-  .curso button:hover h4::before {
-    width: 16px;
-    transition: all 0.3s;
-  }
   .curso img {
     max-width: 140px;
     grid-area: image;
   }
-}
-
-@media (max-width: 380px) {
-  #cursosList {
-    gap: 10px;
-  }
 
   .curso h4 {
-    align-items: center;
-    font-size: 0.55rem;
-    line-height: 0.8rem;
+    font: 500 0.5625rem/0.84375rem "Poppins", sans-serif;;
+  }
+}
+
+@media (max-width: 340px) {
+  #cursosList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 45%));
+    grid-gap: 20px;
   }
 
   .curso img {
     max-width: 120px;
     grid-area: image;
   }
-}
 
-@media (max-width: 340px) {
   .curso h4 {
-    align-items: center;
-    justify-items: left;
-    font-size: 0.5rem;
-    line-height: 0.8rem;
-  }
-
-  .curso h4::before {
-    width: 2px;
-    height: 12px;
-    top: 0px;
-  }
-
-  .curso button:hover h4::before {
-    width: 4px;
-    transition: all 0.3s;
-  }
-
-  .curso img {
-    max-width: 110px;
-    grid-area: image;
+    font: 500 0.5625rem/0.84375rem "Poppins", sans-serif;;
   }
 }

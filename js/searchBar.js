@@ -27,12 +27,12 @@ const displayCursos = (cursosGuia) => {
   const htmlString = cursosGuia
     .map((curso) => {
       return `
-            <li class="curso" id=""nav>
-              <button id="button-curso">
+      <a href="${curso.link}">
+            <li class="curso" id="nav">
                 <img src="${curso.image}"></img>
-                  <h4>${curso.name}</h4>
-              </button>
+                  <h4 class="poppins-t1">${curso.name}</h4>
             </li>
+      </a>
         `;
     })
     .join("");

@@ -20,7 +20,7 @@
 </head>
 
 <body id="cursos">
-    <header class="container header" id="inicio">
+    <header class="container header">
         <a href="/index.html">
             <svg alt="Menu" class="logo" width="188" height="19" viewBox="0 0 188 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.467 7.092a3.927 3.927 0 0 0-1.582-1.605c-.671-.368-1.454-.551-2.35-.551-.99 0-1.87.223-2.637.67-.767.448-1.367 1.087-1.798 1.917-.432.83-.647 1.79-.647 2.876 0 1.118.215 2.092.647 2.923a4.744 4.744 0 0 0 1.846 1.916c.783.448 1.694.671 2.733.671 1.279 0 2.326-.335 3.141-1.006.815-.687 1.35-1.637 1.607-2.851H7.672V9.488h9.063v2.923a7.854 7.854 0 0 1-1.438 3.235c-.736.99-1.687 1.789-2.853 2.396-1.151.59-2.446.886-3.885.886-1.614 0-3.076-.36-4.387-1.078a8.131 8.131 0 0 1-3.07-3.043C.369 13.513 0 12.044 0 10.398 0 8.754.368 7.285 1.103 5.99a7.91 7.91 0 0 1 3.069-3.043c1.31-.735 2.765-1.102 4.363-1.102 1.887 0 3.525.463 4.916 1.39 1.39.91 2.35 2.196 2.877 3.857h-3.86ZM32.118 5.51v13.274h-3.38v-1.677a4.513 4.513 0 0 1-1.703 1.366 5.28 5.28 0 0 1-2.254.48c-1.039 0-1.958-.217-2.757-.648-.8-.447-1.43-1.094-1.894-1.94-.448-.863-.672-1.885-.672-3.067V5.51h3.357v7.307c0 1.055.264 1.87.791 2.444.528.56 1.247.839 2.158.839.927 0 1.655-.28 2.182-.839.527-.575.791-1.39.791-2.444V5.511h3.38ZM37.492 3.93c-.592 0-1.087-.184-1.487-.552a1.92 1.92 0 0 1-.575-1.413c0-.56.191-1.023.575-1.39.4-.383.895-.575 1.487-.575.591 0 1.079.192 1.462.575.4.367.6.83.6 1.39 0 .559-.2 1.03-.6 1.413-.383.368-.871.551-1.462.551Zm1.654 1.58v13.274h-3.357V5.511h3.357ZM41.959 12.1c0-1.342.264-2.532.791-3.57.544-1.039 1.27-1.837 2.182-2.396.927-.56 1.958-.839 3.093-.839.99 0 1.854.2 2.59.6.75.398 1.35.902 1.797 1.509V5.51h3.381v13.273h-3.38v-1.94c-.432.623-1.032 1.142-1.799 1.557-.751.4-1.622.599-2.613.599a5.708 5.708 0 0 1-3.07-.863c-.91-.575-1.637-1.381-2.181-2.42-.527-1.054-.791-2.26-.791-3.617Zm10.453.048c0-.815-.16-1.51-.48-2.085-.319-.591-.75-1.038-1.294-1.342a3.395 3.395 0 0 0-1.75-.479c-.623 0-1.199.152-1.726.455-.528.304-.96.751-1.295 1.342-.32.575-.48 1.262-.48 2.06 0 .8.16 1.502.48 2.11.336.59.767 1.045 1.295 1.365.543.32 1.119.479 1.726.479.623 0 1.207-.152 1.75-.455.544-.32.975-.767 1.295-1.342.32-.591.48-1.294.48-2.108Z" fill="#FB0" />
@@ -31,7 +31,7 @@
             <button id="button-mobile" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                 <span id="hamburger"></span>
             </button>
-            <ul id="menu" class="header-menu font-nav-header color-match" role="menu">
+            <ul id="menu" class="header-menu poppins-t2 color-match" role="menu">
                 <li><a href="/conteudo/sobre.html">sobre</a></li>
                 <li><a href="/conteudo/cursos.html">cursos</a></li>
                 <li><a href="/conteudo/fazerrelato.html">fazer relato</a></li>
@@ -41,72 +41,15 @@
 
     <main class="fundo-branco">
         <div class="container cursos" aria-label="Cursos">
-            <h2 class="introducao-titulo font-titulo">Lista de cursos</h2>
+            <h2 class="poppins-t3">Lista de cursos</h2>
             <div id="searchWrapper">
-                <label class="font-nav-header" for="searchBar">Pesquisar curso</label>
-                <input type="search" id="searchBar" name="searchBar" placeholder="Nome do curso..." class="font-placeholder cor-cinza-b2">
+                <label class="poppins-t2 cor-cinza-40" for="searchBar">Pesquisar curso</label>
+                <input type="search" id="searchBar" name="searchBar" placeholder="Nome do curso..." class="roboto-t1 cor-cinza-b2">
             </div>
-
-            <div class="container-cursoInfo">
-                <div id="cursoInfo" class="cor-cinza-71">
-                    <button id="button-curso-fechar">
-                        <img src="/recursos/svg/voltar.svg" alt="">
-                    </button>
-                    <div class="cursoInfo-conteudo">
-                        <h1>SOBRE</h1>
-                        <div>
-                            <p class="font-curso-info">O curso de Psicologia forma profissionais capazes de diagnosticar, prevenir e tratar doenças mentais, distúrbios emocionais e de personalidade. Ao final do curso, o aluno estará qualificado para observar e analisar as atitudes, os sentimentos e os mecanismos mentais do paciente para ajudá-lo a identificar as causas dos problemas e a rever comportamentos inadequados.
-                            </p>
-                            <p class="font-curso-info cor-cinza-71">A área de atuação desse profissional não está limitada apenas aos consultórios e clínicas particulares. Há muitos graduados que são contratados por empresas de diferentes ramos para o setor de Recursos Humanos. Há também espaço nas instituições de saúde e de assistência social.Os tipos de formação para o curso de Psicologia são: bacharelado, pós-graduação e técnico.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cursoInfo-conteudo">
-                        <h1>FACULDADE</h1>
-                        <div>
-                            <p class="font-curso-info cor-cinza-71">O curso de Psicologia forma profissionais capazes de diagnosticar, prevenir e tratar doenças mentais, distúrbios emocionais e de personalidade. Ao final do curso, o aluno estará qualificado para observar e analisar as atitudes, os sentimentos e os mecanismos mentais do paciente para ajudá-lo a identificar as causas dos problemas e a rever comportamentos inadequados.
-                            </p>
-                            <p class="font-curso-info cor-cinza-71">A área de atuação desse profissional não está limitada apenas aos consultórios e clínicas particulares. Há muitos graduados que são contratados por empresas de diferentes ramos para o setor de Recursos Humanos. Há também espaço nas instituições de saúde e de assistência social.Os tipos de formação para o curso de Psicologia são: bacharelado, pós-graduação e técnico.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cursoInfo-conteudo">
-                        <h1>APRENDIZADO</h1>
-                        <div>
-                            <p class="font-curso-info cor-cinza-71">O curso de Psicologia forma profissionais capazes de diagnosticar, prevenir e tratar doenças mentais, distúrbios emocionais e de personalidade. Ao final do curso, o aluno estará qualificado para observar e analisar as atitudes, os sentimentos e os mecanismos mentais do paciente para ajudá-lo a identificar as causas dos problemas e a rever comportamentos inadequados.
-                            </p>
-                            <p class="font-curso-info cor-cinza-71">A área de atuação desse profissional não está limitada apenas aos consultórios e clínicas particulares. Há muitos graduados que são contratados por empresas de diferentes ramos para o setor de Recursos Humanos. Há também espaço nas instituições de saúde e de assistência social.Os tipos de formação para o curso de Psicologia são: bacharelado, pós-graduação e técnico.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cursoInfo-conteudo">
-                        <h1>TRABALHO</h1>
-                        <div>
-                            <p class="font-curso-info cor-cinza-71">O curso de Psicologia forma profissionais capazes de diagnosticar, prevenir e tratar doenças mentais, distúrbios emocionais e de personalidade. Ao final do curso, o aluno estará qualificado para observar e analisar as atitudes, os sentimentos e os mecanismos mentais do paciente para ajudá-lo a identificar as causas dos problemas e a rever comportamentos inadequados.
-                            </p>
-                            <p class="font-curso-info cor-cinza-71">A área de atuação desse profissional não está limitada apenas aos consultórios e clínicas particulares. Há muitos graduados que são contratados por empresas de diferentes ramos para o setor de Recursos Humanos. Há também espaço nas instituições de saúde e de assistência social.Os tipos de formação para o curso de Psicologia são: bacharelado, pós-graduação e técnico.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cursoInfo-conteudo">
-                        <h1>ATUAÇÃO</h1>
-                        <div>
-                            <p class="font-curso-info cor-cinza-71">O curso de Psicologia forma profissionais capazes de diagnosticar, prevenir e tratar doenças mentais, distúrbios emocionais e de personalidade. Ao final do curso, o aluno estará qualificado para observar e analisar as atitudes, os sentimentos e os mecanismos mentais do paciente para ajudá-lo a identificar as causas dos problemas e a rever comportamentos inadequados.
-                            </p>
-                            <p class="font-curso-info cor-cinza-71">A área de atuação desse profissional não está limitada apenas aos consultórios e clínicas particulares. Há muitos graduados que são contratados por empresas de diferentes ramos para o setor de Recursos Humanos. Há também espaço nas instituições de saúde e de assistência social.Os tipos de formação para o curso de Psicologia são: bacharelado, pós-graduação e técnico.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="curso-list">
-                    <h3 class="font-subtitulo">A-Z</h3>
-                    <a href="#inicio">
-                        <button id="button-curso">
-                            <ul id="cursosList"></ul>
-                        </button>
-                    </a>
-                </div>
+            <div class="curso-list">
+                <h3 class="poppins-t2">A-Z</h3>
+                <!-- Código gerado em searchBar.js via API -->
+                <ul id="cursosList"></ul>
             </div>
         </div>
     </main>
@@ -119,27 +62,26 @@
                 </a>
             </div>
             <div class="footer-contato">
-                <h3 class="font-h3 cor-branco">contato</h3>
-                <ul class="font-texto-padrao cor-cinza-b2">
+                <h3 class="poppins-t2 cor-branco">contato</h3>
+                <ul class="roboto-t1 cor-cinza-b2">
                     <li><a href="">Instagram</a></li>
                     <li><a href="tel:+5541999999999">+55 41 99999-9999</a></li>
                     <li><a href="mailto:contato@guiadecursos.com">contato@guiadecursos.com</a></li>
                 </ul>
             </div>
             <div class="footer-explore">
-                <h3 class="font-h3 cor-branco">explore</h3>
-                <ul class="font-texto-padrao cor-cinza-b2">
+                <h3 class="poppins-t2 cor-branco">explore</h3>
+                <ul class="roboto-t1 cor-cinza-b2">
                     <li><a href="/conteudo/sobre.html">Sobre</a></li>
                     <li><a href="/conteudo/cursos.html">Cursos</a></li>
                     <li><a href="/conteudo/fazerrelato.html">Fazer relato</a></li>
                 </ul>
             </div>
-            <p class="font-texto-padrao cor-cinza-b2">Desenvolvido por <a href="https://gabrielmenezesnog.github.io/"><span class="cor-azul-link">Gabriel Menezes</span></a><br>Guia de Cursos © Todos os direitos reservados.</p>
+            <p class="roboto-t1 cor-cinza-b2">Desenvolvido por <a href="https://gabrielmenezesnog.github.io/"><span class="cor-azul-link">Gabriel Menezes</span></a><br>Guia de Cursos © Todos os direitos reservados.</p>
         </div>
     </footer>
     <script src="/js/searchBar.js"></script>
     <script src="/js/mobile-navigation.js"></script>
-    <script src="/js/course-click.js"></script>
 </body>
 
 </html>

@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 32px;
-  padding: 32px;
+  gap: 40px;
+  padding: 28px 20px;
 }
 
 .header .logo {
@@ -17,7 +17,7 @@
 .header-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 28px;
 }
 
 .header-menu a {
@@ -26,24 +26,25 @@
   padding: 8px 2px;
 }
 
-.header-menu a:hover::after {
-  width: 100%;
-}
-
 .header-menu a:after {
   content: "";
   display: block;
-  height: 4px;
+  height: 3px;
   width: 0px;
   background: var(--cor-amarelo);
-  margin-top: -8px;
-  transition: 0.2s;
   position: absolute;
+  bottom: 5px;
+  transition: 0.3s;
+}
+
+.header-menu a:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 620px) {
   .header {
     gap: 20px;
+    padding: 16px 20px;
     background: #111;
   }
 
@@ -137,5 +138,9 @@
   .header {
     gap: 20px;
     padding: 20px 40px;
+  }
+
+  .header-menu a{
+    font: 500 1rem/1.5rem "Poppins", sans-serif;
   }
 }
