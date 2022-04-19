@@ -85,12 +85,12 @@
 
   .introducao-titulo {
     padding-bottom: 8px;
-    max-width: 13ch;
+    font: 600 2rem/2.5rem "Poppins", sans-serif;
   }
 
   .introducao-conteudo p {
     padding-bottom: 16px;
-    font: 400 1rem/1.5 "Roboto", sans-serif;
+    font: 400 1rem/1.5rem "Roboto", sans-serif;
     justify-self: center;
   }
 
@@ -106,7 +106,6 @@
 
   .introducao-titulo {
     padding-bottom: 8px;
-    max-width: unset;
   }
 
   .introducao-conteudo a {

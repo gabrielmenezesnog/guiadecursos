@@ -73,7 +73,7 @@
 }
 
 #cursosList a {
-  font: 600 0.8rem/1.25 "Poppins", sans-serif;
+  font: 600 0.8rem/1.25rem "Poppins", sans-serif;
 }
 
 #cursosList a h4 {
@@ -113,7 +113,7 @@
   }
 
   .curso h4 {
-    font: 500 0.75rem/1.125rem "Poppins", sans-serif;;
+    font: 500 0.75rem/1.125rem "Poppins", sans-serif;
   }
 }
 
@@ -134,6 +134,10 @@
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
 
+  #searchWrapper label {
+    font: 500 1rem/1.5rem "Poppins", sans-serif;
+  }
+
   .curso img {
     width: 160px;
   }
@@ -150,7 +154,7 @@
   }
 
   .curso h4 {
-    font: 500 0.5625rem/0.84375rem "Poppins", sans-serif;;
+    font: 500 0.5625rem/0.84375rem "Poppins", sans-serif;
   }
 }
 

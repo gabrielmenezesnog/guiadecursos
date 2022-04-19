@@ -22,29 +22,29 @@
 }
 
 .poppins-t4 {
-  font: 600 2rem/3rem "Poppins", sans-serif;
+  font: 600 2rem/2 "Poppins", sans-serif;
   letter-spacing: 1.5%;
   /* Equivalente a 32px - semibold */
 }
 
-.poppins-t4 {
-  font: 600 3.2rem/3.75rem "Poppins", sans-serif;
+.poppins-t5 {
+  font: 600 3.25rem/4rem "Poppins", sans-serif;
   letter-spacing: 1.5%;
   /* Equivalente a 52px - semibold */
 }
 
-.poppins-t5 {
+.poppins-t6 {
   font: 600 6rem/6rem "Poppins", sans-serif;
   letter-spacing: 1.5%;
   /* Equivalente a 96px - semibold */
 }
 
 .roboto-t1 {
-  font: 400 1rem/1.5 "Roboto", sans-serif;
+  font: 400 1rem/1.5rem "Roboto", sans-serif;
   /* Equivalente a 16px - regular */
 }
 
 .roboto-t2 {
-  font: 400 1.25rem/1.875 "Roboto", sans-serif;
+  font: 400 1.25rem/1.875rem "Roboto", sans-serif;
   /* Equivalente a 20px - regular */
 }
