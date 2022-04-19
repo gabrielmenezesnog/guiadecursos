@@ -110,7 +110,6 @@
 
   .curso img {
     max-width: 200px;
-    grid-area: image;
   }
 
   .curso h4 {
@@ -121,13 +120,33 @@
 @media (max-width: 470px) {
   #cursosList {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 45%));
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .curso img {
+    width: 180px;
+  }
+}
+
+@media (max-width: 430px) {
+  #cursosList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .curso img {
+    width: 160px;
+  }
+}
+
+@media (max-width: 390px) {
+  #cursosList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 
   .curso img {
     max-width: 140px;
-    grid-area: image;
   }
 
   .curso h4 {
@@ -135,19 +154,13 @@
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 350px) {
   #cursosList {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 45%));
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 
   .curso img {
     max-width: 120px;
-    grid-area: image;
-  }
-
-  .curso h4 {
-    font: 500 0.5625rem/0.84375rem "Poppins", sans-serif;;
   }
 }
