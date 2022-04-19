@@ -70,6 +70,7 @@
   }
 
   .introducao-conteudo p {
+    font: 400 1rem/1.5rem "Roboto", sans-serif;
     padding-bottom: 16px;
   }
 }
@@ -78,18 +79,18 @@
   .introducao picture {
     margin-top: -120px;
   }
-
+  /*
   .introducao-conteudo {
     text-align: left;
   }
-
+  */
   .introducao-titulo {
     padding-bottom: 8px;
     font: 600 2rem/2.5rem "Poppins", sans-serif;
   }
 
   .introducao-conteudo p {
-    padding-bottom: 16px;
+    padding-bottom: 24px;
     font: 400 1rem/1.5rem "Roboto", sans-serif;
     justify-self: center;
   }
@@ -101,7 +102,7 @@
 
 @media (max-width: 360px) {
   .introducao-conteudo h1 {
-    font: 600 1.5rem/2.25rem "Poppins", sans-serif;
+    font: 600 1.6rem/2.25rem "Poppins", sans-serif;
   }
 
   .introducao-titulo {
