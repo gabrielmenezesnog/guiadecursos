@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   background: #fff;
@@ -23,6 +27,10 @@ p,
 blockquote,
 dd {
   margin: 0px;
+}
+
+p {
+  margin-bottom: 20px;
 }
 
 img {
@@ -57,6 +65,23 @@ button {
   background: linear-gradient(180deg, #ffbb00 0%, #ffa800 100%);
   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.25);
   border-radius: 50px;
+}
+
+.lista li {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+  align-items: center;
+  position: relative;
+}
+
+.lista li::before{
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--cor-preto);
 }
 
 @media (max-width: 620px) {

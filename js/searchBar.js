@@ -5,8 +5,8 @@ let cursos = [];
 searchBar.addEventListener("keyup", (e) => {
   const searchString = e.target.value.toLowerCase();
 
-  const cursosFiltrados = cursos.filter((curso) => {
-    return curso.name.toLowerCase().includes(searchString);
+  const cursosFiltrados = cursos.filter((listaCurso) => {
+    return listaCurso.name.toLowerCase().includes(searchString);
   });
   displayCursos(cursosFiltrados);
 });
@@ -25,12 +25,12 @@ const loadCursos = async () => {
 
 const displayCursos = (cursosGuia) => {
   const htmlString = cursosGuia
-    .map((curso) => {
+    .map((listadecurso) => {
       return `
-      <a href="${curso.link}">
-            <li class="curso" id="nav">
-                <img src="${curso.image}"></img>
-                  <h4 class="poppins-t1">${curso.name}</h4>
+      <a href="${listadecurso.link}">
+            <li class="listaCurso" id="nav">
+                <img src="${listadecurso.image}"></img>
+                  <h4 class="poppins-t1">${listadecurso.name}</h4>
             </li>
       </a>
         `;

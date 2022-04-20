@@ -8,6 +8,7 @@
   --cor-preto: #111;
   --color-match: #111;
   --cor-amarelo: #ffbb00;
+  --cor-amarelo-opaco: rgba(255, 187, 0, 0.5);
   --cor-amarelo-escuro: #332200;
   --cor-azul-link: #2e9bff;
 }
@@ -42,6 +43,10 @@
 
 .cor-amarelo {
   color: var(--cor-amarelo);
+}
+
+.cor-amarelo-opaco {
+  color: var(--cor-amarelo-opaco);
 }
 
 .cor-amarelo-escuro {
