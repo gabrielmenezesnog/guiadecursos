@@ -34,15 +34,72 @@
             <ul id="menu" class="header-menu poppins-t2 color-match" role="menu">
                 <li><a href="/conteudo/sobre.html">sobre</a></li>
                 <li><a href="/conteudo/cursos.html">cursos</a></li>
-                <li><a href="/conteudo/fazerrelato.html">fazer relato</a></li>
+                <li><a href="/conteudo/relatar.html">fazer relato</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="fundo-branco">
-        <div class="container curso" aria-label="Introdução">
-          
+        <div class="container relatar" aria-label="Introdução">
+            <h2 class="poppins-t3">Compartilhe sua experiência!</h2>
+            <p class="roboto-t2 cor-cinza-9c">Compartilhar a sua experiência pode ser muito útil para alguém que deseja seguir o mesmo caminho que você! Após ser <span class="negrito">analisado</span> e <span class="negrito">aprovado</span>, seu relato ficará visível ao público na página referente ao seu curso. </p>
         </div>
+
+        <form class="container relatar" action="">
+            <div class="relatar-grid">
+                <div class="form">
+                    <div class="info-pessoal">
+                        <h4 class="poppins-t2 cor-preto">Sobre você</h4>
+                        <div class="poppins-t1 cor-cinza-40 ">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" size="100" required>
+                        </div>
+                        <div class="poppins-t1 cor-cinza-40">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="contato@email.com" size="100" required>
+                        </div>
+                    </div>
+                    <div class="info-curso">
+                        <h4 class="poppins-t2 cor-preto">Sobre o seu curso</h4>
+                        <div class="poppins-t1 cor-cinza-40">
+                            <label for="nomeCurso">Nome do curso</label>
+                            <input type="text" id="nomeCurso" name="nomeCurso" placeholder="psicologia, turismo, direito..." size="100" required>
+                        </div>
+                        <div class="radio poppins-t1 cor-cinza-b2">
+                            <input type="radio" name="situacao" id="formado" value="formado">
+                            <label for="formado">sou formado</label>
+                            <input type="radio" name="situacao" id="cursando" value="cursando">
+                            <label for="cursando">estou cursando</label>
+                        </div>
+                        <div class="poppins-t1 cor-cinza-40">
+                            <label for="relato">Descreva a sua experiência com seu curso</label>
+                            <textarea name="relato" id="relato" placeholder="Críticas, opiniões,  expectativas e realidades..." size="500" cols="30" rows="5" required></textarea>
+                        </div>
+                        <h5 class="poppins-t1 cor-cinza-40"> Recomendaria este curso?</h5>
+                        <div class="radio poppins-t1 cor-cinza-b2">
+                            <input type="radio" name="recomendacao" id="sim" value="sim">
+                            <label for="sim">sim</label>
+                            <input type="radio" name="recomendacao" id="nao" value="nao">
+                            <label for="nao">não</label>
+                        </div>
+                        <div>
+                            <div class="roboto-t1 cor-cinza-40 checkbox">
+                                <input type="checkbox" id="termos" name="termos" value="true" required>
+                                <label for="termos">Eu li e aceito os <a href="/conteudo/termos.html" class="cor-azul-link">Termos e Condições</a>.</label>
+                            </div>
+                            <div class="roboto-t1 cor-cinza-40 checkbox">
+                                <input type="checkbox" id="anonimo" name="anonimo" value="true">
+                                <label for="anonimo">Relato anônimo <a href="/conteudo/anonimo.html" class="cor-azul-link">(?)</a></label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button-principal poppins-t2 cor-amarelo-escuro">enviar</button>
+                </div>
+                <picture>
+                    <img src="/recursos/img/hat.png" alt="">
+                </picture>
+            </div>
+        </form>
     </main>
 
     <footer class="footer-bg">
@@ -65,7 +122,7 @@
                 <ul class="roboto-t1 cor-cinza-b2">
                     <li><a href="/conteudo/sobre.html">Sobre</a></li>
                     <li><a href="/conteudo/cursos.html">Cursos</a></li>
-                    <li><a href="/conteudo/fazerrelato.html">Fazer relato</a></li>
+                    <li><a href="/conteudo/relatar.html">Fazer relato</a></li>
                 </ul>
             </div>
             <p class="roboto-t1 cor-cinza-b2">Desenvolvido por <a href="https://gabrielmenezesnog.github.io/"><span class="cor-azul-link">Gabriel Menezes</span></a><br>Guia de Cursos © Todos os direitos reservados.</p>
